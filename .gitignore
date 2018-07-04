@@ -1,0 +1,4 @@
+*.exe
+*.zip
+rabbitmq_server-3.7.6/
+rabbitmq-server-windows-3.7.6/
