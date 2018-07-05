@@ -89,7 +89,8 @@ ENV HOMEDRIVE=c:\ `
     HOMEPATH=erlang
 
 # turn on management plugin
-RUN "rabbitmq-plugins.bat" enable rabbitmq_management --offline
+#RUN "rabbitmq-plugins.bat" enable rabbitmq_management --offline
+RUN cmd.exe /C "rabbitmq-plugins.bat enable rabbitmq_management --offline"
 
 # run external command when container starts to allow for additional setup
 CMD .\rabbitmq-server.bat
